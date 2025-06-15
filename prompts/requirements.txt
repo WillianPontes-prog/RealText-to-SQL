@@ -1,0 +1,6 @@
+google-generativeai
+python-dotenv
+mysql-connector-python
+pillow
+tabulate
+psycopg2-binary
