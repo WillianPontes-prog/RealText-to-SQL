@@ -21,17 +21,16 @@ projetoFinal/
 │   │   └── gemini_client.py
 │   ├── gui/
 │   │   ├── __init__.py
-│   │   └── chat_gui.py
-│   └── cli/
-│       ├── __init__.py
-│       └── chat_cli.py
+│   │   ├── chat_gui.py
+│   │   └── chat_cli.py
 │
 ├── prompts/
 │   ├── prompt_mysql.txt
-│   └── prompt_postgres.txt
+│   ├── prompt_postgres.txt
+│   └── requirements.txt
 │
 ├── .env
-├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
@@ -55,7 +54,7 @@ projetoFinal/
 
 2. **Instale as dependências:**
     ```sh
-    pip install -r requirements.txt
+    pip install -r prompts/requirements.txt
     ```
 
 3. **Configure o arquivo `.env`:**
@@ -134,7 +133,7 @@ python -m app.gui.chat_gui
 
 Execute:
 ```sh
-python -m app.cli.chat_cli
+python -m app.gui.chat_cli
 ```
 
 - Escolha o banco de dados (1 ou 2)
